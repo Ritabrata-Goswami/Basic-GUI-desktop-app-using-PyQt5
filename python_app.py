@@ -67,6 +67,7 @@ class App(QMainWindow):
 
     def upload_click(self):
         fname = QFileDialog.getOpenFileName(None, "Import CSV", "", "Files allowed (*.csv *.xlsx)")
+        # File name with extension comes with tuple.
         print(fname[0])
     
     @pyqtSlot()
